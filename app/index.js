@@ -17,11 +17,12 @@ module.exports = generators.Base.extend({
       default: this.appname
     }, {
       type: 'confirm',
-      name: 'cool',
-      message: 'Test for cool feature'
+      name: 'playerConfigPatch',
+      message: 'Will you need a player.config.patch?',
+      default: false
     }]).then(function (answers) {
       this.log('app name', answers.name)
-      this.log('cool test', answers.cool)
+      this.log('player.config.patch?', answers.playerConfigPatch)
     }.bind(this))
   }
 })
