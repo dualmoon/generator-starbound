@@ -23,5 +23,6 @@ module.exports = generators.Base.extend({
       this.log('app name', answers.name)
       this.log('cool test', answers.cool)
     }.bind(this))
+  }
 })
 
